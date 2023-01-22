@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(registry:HKEY_LOCAL_MACHINE\SOFTWARE\Akisystems\akibld@Sources)akibld-lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BE45C32E-EA42-4C11-AEA8-EDBD1E5A4D62}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ProjectName).h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ffms2.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\svn\akibld\src\akisystems\akibld\akibld-lib.vcxproj">
+      <Project>{23650bdb-c46f-43ce-8c77-056924f69b6a}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
